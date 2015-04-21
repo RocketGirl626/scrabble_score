@@ -9,4 +9,8 @@ describe('String#scrabble_score') do
   it("returns a scrabble score for a letter") do
     expect("z".scrabble_score()).to(eq(10))
   end
+
+  it("computes total scrabble score for a given word") do
+    expect("quixotic".scrabble_score()).to(eq(26))
+  end
 end
